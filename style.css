@@ -1,0 +1,107 @@
+.header {
+    background-color: lightgray;
+    padding: 0.625em;
+    grid-area: hd;
+}
+
+.main {
+    background-color: lemonchiffon;
+    padding: 0.625em;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.625em;
+    grid-template-areas:
+        "sec1 sec1"
+        "sec2 sec3"
+        "sec4 sec4";
+}
+
+.aside {
+    background-color: lightgreen;
+    padding: 0.625em;
+    grid-area: as;
+}
+
+.footer {
+    background-color: lightgray;
+    padding: 0.625em;
+    grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6%;
+    grid-template-areas:
+        "ter1 ter2 ter3 ter4";
+}
+
+.ter1 {
+    grid-area: ter1;
+}
+
+.ter2 {
+    grid-area: ter2;
+}
+
+.ter3 {
+    grid-area: ter3;
+}
+
+.ter4 {
+    grid-area: ter4;
+}
+
+.container {
+    height: 80vh;
+    display: grid;
+    text-align: center;
+    font-size: 1.375em;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd"
+        "main main main main main main as as as"
+        "ft ft ft ft ft ft ft ft ft";
+    min-width: 300px;
+}
+
+.section {
+    background-color: rgb(223, 126, 71);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section1 {
+    grid-area: sec1;
+}
+
+.section2 {
+    grid-area: sec2;
+}
+
+.section3 {
+    grid-area: sec3;
+}
+
+.section4 {
+    grid-area: sec4;
+}
+
+.foo {
+    background-color: lavenderblush;
+    padding: 0.93em;
+    word-break: break-all;
+}
+
+.ter1 {
+    grid-area: ter1;
+}
+
+.ter2 {
+    grid-area: ter2;
+}
+
+.ter3 {
+    grid-area: ter3;
+}
+
+.ter4 {
+    grid-area: ter4;
+}
